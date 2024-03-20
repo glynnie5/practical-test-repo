@@ -15,8 +15,15 @@
         <h1>All the cats are:</h1>
 
         <div>
-            Here's a cat! <br /><br />
-
+            {% if cats %}
+                <ul>
+                {% for cat in cats %}
+                    <li>{{ cat.name }}</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                There are no cats
+            {% endif %}
         </div>
 
         <div>
