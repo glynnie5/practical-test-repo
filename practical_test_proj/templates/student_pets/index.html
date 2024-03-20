@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Student Pets</title>
+
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    </head>
+
+    <body>
+        <img src="{% static 'images/cat.png' %}" alt="Cat Picture" />
+
+        <h1>Student Pets</h1>
+
+        <div>
+            hey there partner! <br />
+            <strong>{{ boldmessage }}</strong> <br />
+        </div>
+
+        <div>
+            <a href="/student_pets/about/">About</a><br />
+        </div>
+    </body>
+</html>
