@@ -1,4 +1,8 @@
 body {
-    background-color: white;
+    background-color: #ccccff;
+    font-family: 'Arial';
 }
 
+h1 {
+    font-family: 'Trebuchet MS';
+}
