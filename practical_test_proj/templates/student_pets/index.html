@@ -16,12 +16,12 @@
 
         <div>
             {% if students %}
-                <ul>
+                <ul id="students_list">
                 {% for student in students %}
 
                     <li>
                     {{ student.forename }} {{ student.surname }} has
-                    <strong>{{ student.catNum }}</strong>
+                    <strong id="cat_num">{{ student.catNum }}</strong>
 
                     {% if student.catNum == 1 %}
                         cat
@@ -31,9 +31,9 @@
                         </li>
                     {% endif %}
 
-                    <ul>
+                    <ul id="cats_list">
                     {% for cat in student.order_cats %}
-                        <li>{{ cat }}</li>
+                        <li id="cat_name">{{ cat }}</li>
                     {% endfor %}
                     </ul>
                     <br />

@@ -19,18 +19,6 @@ class Student(models.Model):
         for cat in cats:
             cat_list.append(cat.name)
         cat_list.sort()
-        #for count in range(len(cats)-1):
-         #   swapped = False
-          #  for i in range(len(cats)-count-1):
-           #     if cats[count].name < cats[count + 1].name:
-            #        swapped = True
-             #       temp = cats[count]
-              #      cats[count] = cats[count + 1]
-               #     cats[count + 1] = temp
-
-            #if not swapped:
-             #   break
-
 
         return cat_list
 
