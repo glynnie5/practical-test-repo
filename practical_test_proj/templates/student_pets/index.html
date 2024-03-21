@@ -21,9 +21,9 @@
 
                     <li>
                     {{ student.forename }} {{ student.surname }} has
-                    <strong>{{ student.cat_set.all.count }}</strong>
+                    <strong>{{ student.catNum }}</strong>
 
-                    {% if student.cat_set.all.count == 1 %}
+                    {% if student.catNum == 1 %}
                         cat
                         </li>
                     {% else %}
@@ -31,10 +31,9 @@
                         </li>
                     {% endif %}
 
-
                     <ul>
-                    {% for cat in student.cat_set.all %}
-                        <li>{{ cat.name }}</li>
+                    {% for cat in student.order_cats %}
+                        <li>{{ cat }}</li>
                     {% endfor %}
                     </ul>
                     <br />

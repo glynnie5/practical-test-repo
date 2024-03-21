@@ -22,13 +22,13 @@ a:active {
     color: black;
 }
 
-ol li {
+#cat_list li {
   list-style-type: none;
   counter-increment: item;
   margin-bottom: 12px;
 }
 
-ol li:before {
+#cat_list li:before {
   content: counter(item);
   margin-right: 5px;
   font-size: 80%;
