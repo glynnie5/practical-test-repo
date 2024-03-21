@@ -16,19 +16,20 @@
 
         <div>
             {% if cats %}
-                <ul>
+                <ol>
                 {% for cat in cats %}
                     <li>{{ cat.name }}</li>
                 {% endfor %}
-                </ul>
+                </ol>
             {% else %}
                 There are no cats
             {% endif %}
         </div>
 
         <div>
+            <br />
             Click to go back
-            <a href="/student_pets/">Home</a><br />
+            <a href="/student_pets/">home</a><br />
         </div>
     </body>
 </html>

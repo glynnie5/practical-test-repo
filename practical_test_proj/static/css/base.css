@@ -6,3 +6,34 @@ body {
 h1 {
     font-family: 'Trebuchet MS';
 }
+
+a {
+    text-decoration: none;
+    color: #416788;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #294156;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+ol li {
+  list-style-type: none;
+  counter-increment: item;
+  margin-bottom: 12px;
+}
+
+ol li:before {
+  content: counter(item);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #f9dd94;
+  font-weight: bold;
+  padding: 5px 8px 2px 8px;
+  border-radius: 3px;
+}
